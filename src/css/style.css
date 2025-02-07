@@ -5,14 +5,14 @@ body {
     box-sizing: border-box;
 }
 .container{
-    margin-right: 130px;
-    margin-left: 390px;
+    
+    padding: 40px;
     
   }
 
 .hero-content {
-    max-width: 80%;
-    position: absolute;
+    max-width: 100%;
+    
 }
 
 .hero-content h1 {
@@ -57,6 +57,8 @@ color: #5a3729;
     left: 900px;
     top: 45px;
     position: absolute;
+    max-width: 100%;
+    height: auto initial;
    
 }
 
@@ -87,14 +89,16 @@ color: #5a3729;
     display: flex;
     position: absolute;
     top: 400px;
-    border-radius: 0px;
     left: 0px;
+    border-radius: 0px;
+    
 }
 .card {
     padding: 0px;
     border-radius: 10px;
     color: white;
     border-radius: 30px;
+    
 }
 .lorems{
     display: flex;
@@ -103,10 +107,13 @@ color: #5a3729;
     top: 650px;
     left: 40px;
 }
-@media (max-width: 991px) {
+@media (max-width: 450px) {
 .container{
-max-width: 168px;
-left: 20px;}
+max-width: 100%;
+left: 20px;
+right: 0px;
+display: block;
+flex-wrap: wrap;}
 .hero-content{
     left: 20px;
     font-size: 20px;
@@ -114,23 +121,35 @@ left: 20px;}
 }
 .cards{
     position: absolute;
-    top: 500px;
-    left: -360px;
+    top: 1100px;
+    left: -0px;
     height: 30px;
     width: 20px;
+    display: block;
 }
 
 .lorems{
-    left: -280px;
+    left: 80px;
     width: 30px;
     gap: 350px;
+    display: block;
 }
 .stats{
 position: absolute;
 height: 10px;
+top: 459px;
+left: -20px;
 }
 .stats-2{
-   left:390px ; 
+    position: absolute;
+   left:-20px ; 
+   top: 800px;
+   border: 2px solid black;
+   padding-right: 240px;
+   background-color: #3d3c3c8c;
+}
+.stats-2 :hover{
+    background-color: white;
 }
 .soon{
     font-size: 20px;
@@ -138,5 +157,21 @@ height: 10px;
 .yozuv{
     font-size: 20px;
     width: 900px;
+}
+.card-1{
+    max-width: 100%;
+    height: auto;
+}
+.card-2{
+    max-width: 100%;
+    height: auto;
+}
+.card-3{
+    max-width: 100%;
+    height: auto;
+}
+.card-4{
+    max-width: 100%;
+    height: auto;
 }
 }
